@@ -25,7 +25,7 @@ def etaylor(n):
 
 
 # Bereich der Werte für die nachher die Funktionen gezeichnet werden
-t = range(1, 40)
+t = range(1, 67)
 
 # erzeugt den Plot mit t auf der x-Achse und einmal (1+1/t)^t auf der
 # y-Achse für alle t in dem eben definierten array
