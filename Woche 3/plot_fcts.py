@@ -1,4 +1,4 @@
-from math import cos, sin
+from math import cos, sin, cosh, sinh
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib import cm
@@ -11,15 +11,15 @@ def fun(x, y):
             z[i][j] = f(x[i][j], y[i][j])
     return z
 
-
+a=1
 def f(x, y):
-    return x*x-y*y
+    return x**3-3*a*x-y**2-5
 
 
 fig = plt.figure()
 ax = plt.axes(projection='3d')
 
-x = y = np.arange(-2, 2, 0.01)
+x = y = np.arange(-5, 5, 0.02)
 X, Y = np.meshgrid(x, y)
 Z = np.array(fun(X, Y))
 
